@@ -1,0 +1,110 @@
+
+/* node-hue-api states */
+
+//0. Sunshine
+//1. Partly Cloudy
+//2. Cloudy
+//3. Rain
+//4. Thunderstorm (TODO)
+//5. Ocean
+//6. Desert
+//7. Forest
+//8. Heaven
+//9. Hell
+//10. Aurora
+---------------------------------
+
+//api-16. trees-green-hum_211 //GREEN PULSE FOR THE "HMMPH" "HMMPH"
+
+
+//api-11. trees-green-hum_211 //GREEN PULSE FOR THE HUMMMMMMMMMMM √
+lightState.create().on().brightness(100).transition(3000).rgb(10, 79, 19)
+--------------------------------
+//api-12. red-lanterns_36 //RED LANTERNS @:36
+lightState.create().on().bri(100).sat(255).hue(0)
+--------------------------------
+//api-13. star-flower-flicker_138 //FLICKER STAR FLOWERS
+lightState.create().on().bri(25).sat(100).hue(12750).transitionTime(20)
+--------------------------------
+//api-14. red-pink-tree_148 //RED LANTERN TREE & @1:48&@1:54 PINK LIGHT OF ITS FLOWERS
+lightState.create().on().bri(80).sat(200).rgb(255, 108, 205).transitionSlow()
+--------------------------------
+//api-15. shining-trees_202 //OPEN FOREST / SHINING TREES
+lightState.create().on().brightness(255).transition(10000).rgb(0, 181, 24)
+--------------------------------
+//api-16. trees-green-hum_211 //GREEN PULSE FOR THE "HMMPH" "HMMPH"
+--------------------------------
+//17. api-10 - Aurora  //@2:24 PSYCHEDELIC TREE LANTERNS.
+lightState.create().on().brightness(255).sat(255).transitionTime(1000).rgb(7, 51, 73)
+--------------------------------
+//18. 9 - Hell @2:33 //LAVA BLOB
+--------------------------------
+//18. Dark/Off  @3:28 //SLEEP
+node-hue-api-18
+lightState.create().turnOff().transition(3000)
+--------------------------------
+//20. 10 - Aurora @3:33 STARS STILL BRIGHT
+lightState.create().on().brightness(255).sat(255).transitionTime(1000).rgb(7, 51, 73)
+--------------------------------
+//21. //api-12. red-lanterns_36 //RED LANTERNS @3:40
+lightState.create().on().bri(100).sat(255).hue(0)
+--------------------------------
+//22. //api-11. trees-green-hum_211 //GREEN PULSE FOR THE "HMMPH" "HMMPH"
+//23. //api-5 Ocean @4:13
+//24. //node-hue-api-17
+
+
+
+STORY:
+//13. @1:38 FLICKER STAR FLOWERS
+@1:48 red-pink-tree_148 RED LANTERN TREE & @1:54 PINK LIGHT OF ITS FLOWERS @
+//15. @2:02 OPEN FOREST / SHINING TREES
+//16. @2:11 GREEN PULSE FOR THE "HMMPH" "HMMPH" YELLOW "HMMMMMMM" Went Forest.
+
+lightState.create().on().rgb(22, 107, 33).transitionSlow(1000)
+
+@2:24 PSYCHEDELIC TREE LANTERNS.
+//17. @2:33 LAVA BLOB
+//18. @2:55 YELLOW LANTERN TREES/YELLOW. @3:13 HOPPERS BEEP PULSE
+//19. @3:28 SLEEP
+//20. @3:33 STARS STILL BRIGHT
+//@3:40 RED/WHITE Lanterns
+@3:50 GREEN PULSE FOR THE "HMMPH" "HMMPH" / @4:00 YELLOW "HMMMMMMM" Went Forest.
+//21. @4:13 SWIMMING OCEAN
+//22. @4:41 PINK OYSTER TURN TO RED FOR BLUSHING @4:48
+
+
+  //  api.scenes()
+  //      .then(displayResults)
+  //      .done();
+
+
+//1. Get Scenes
+
+    // api.getScenes()
+    // .then(displayResults)
+    // .done();
+
+    // api.scene(sceneId)
+    // .then(displayResults)
+    // .done();
+
+    //2. Light Status
+
+    // api.lightStatus(2)
+    //     .then(displayResults)
+    //     .done();
+
+
+    //3. Set Scene
+    //
+    // api.setSceneLightState(sceneId, lightId, state)
+    //     .then(displayResults)
+    //     .done();
+
+
+//4. GO! Activate Scene
+//
+api.activateScene(sceneId)
+    .then(displayResults)
+    .done();

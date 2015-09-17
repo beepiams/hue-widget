@@ -12,8 +12,8 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var Handlers = {
-  "300": "node-hue-api-9",
-  "1000": "node-hue-api-4",
+  "300": "node-hue-api-16",
+  "1000": "node-hue-api-17",
 
   //api-12. red-lanterns_36 //RED LANTERNS @:36
   //  lightState.create().on().bri(100).sat(255).hue(0)

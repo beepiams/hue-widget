@@ -80,7 +80,7 @@ api.config().then(displayResults).done();
 
 class WidgetBootstrap extends Bootstrap {
   handler(message){
-    super.handler(message);
+    // super.handler(message);
 
     if (Handlers.hasOwnProperty(message)) {
 

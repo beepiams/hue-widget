@@ -9,17 +9,17 @@
 
 
 const Handlers = {
-  "300": "node-hue-api-16",
-  "1000": "node-hue-api-17",
+  "3.00": "node-hue-api-16",
+  "10.00": "node-hue-api-15",
 
   //api-12. red-lanterns_36 //RED LANTERNS @:36
   //  lightState.create().on().bri(100).sat(255).hue(0)
-  "3600": "node-hue-api-12",
+  "36.00": "node-hue-api-12",
   //api-13. star-flower-flicker_138 //FLICKER STAR FLOWERS
   // lightState.create().on().bri(25).sat(100).hue(12750).transitionTime(20)
-  "13800": "node-hue-api-13",
+  "98.00": "node-hue-api-13",
   //api-14. red-pink-tree_148 //RED LANTERN TREE & @1:48&@1:54 PINK LIGHT OF ITS FLOWERS
-  "15400": "node-hue-api-14",
+  "154.00": "node-hue-api-14",
   //api-15. shining-trees_202 //OPEN FOREST / SHINING TREES
   // lightState.create().on().brightness(255).transition(10000).rgb(0, 181, 24)
   "20200": "node-hue-api-15",

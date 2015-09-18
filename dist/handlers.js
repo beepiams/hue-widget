@@ -2,6 +2,18 @@
   Handlers based on timestamps
 */
 
+//0. Sunshine
+//1. Partly Cloudy
+//2. Cloudy
+//3. Rain
+//4. Thunderstorm (TODO)
+//5. Ocean
+//6. Desert
+//7. Forest
+//8. Heaven
+//9. Hell
+//10. Aurora
+
 //  api.activateScene(sceneId)
 //  .then(displayResults)
 // .done();
@@ -16,16 +28,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 var Handlers = {
   "3.00": "node-hue-api-1", //DONE
-
   "13.00": "node-hue-api-18",
   "22.00": "node-hue-api-11", //DONE
-
   //api-12. red-lanterns_36 //RED LANTERNS @:36
   //  lightState.create().on().bri(100).sat(255).hue(0)
-  "31.00": "node-hue-api-12", //DONE
+  "35.00": "node-hue-api-12", //DONE
   //api-13. star-flower-flicker_138 //FLICKER STAR FLOWERS
   // lightState.create().on().bri(25).sat(100).hue(12750).transitionTime(20)
-  "45.00": "node-hue-api-3",
+  "44.00": "node-hue-api-3",
   "68.00": "node-hue-api-5",
   "70.00": "node-hue-api-8",
   "90.40": "node-hue-api-14", //DONE PINK AND PURPLE

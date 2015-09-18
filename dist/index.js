@@ -38,19 +38,18 @@ var displayResults = function displayResults(result) {
 // var host = "172.24.246.88",
 var host = "172.24.252.93",
     username = "2c84e8b53a80702738d26b8113b8b353",
-    sceneId = "node-hue-api-1",
-    sceneName = "off_328",
-    api = new HueApi(host, username),
-    lightId = 1,
-    state = lightState.create().turnOff().transition(3000);
+    sceneId = "node-hue-api-11",
 
-api.config().then(displayResults).done();
-console.log(api);
+// sceneName = "off_328",
+api = new HueApi(host, username),
+    lightId = 1,
+    state = lightState.create().on().brightness(100).transition(3000).rgb(10, 79, 19);
+
+// api.config().then(displayResults).done();
+// console.log(api);
 //3. Set Scene
 //
-//  api.setSceneLightState(sceneId, lightId, state)
-//      .then(displayResults)
-//      .done();
+api.setSceneLightState(sceneId, lightId, state).then(displayResults).done();
 
 //4. GO! Activate Scene
 //
@@ -102,7 +101,7 @@ var WidgetBootstrap = (function (_Bootstrap) {
   _createClass(WidgetBootstrap, [{
     key: "handler",
     value: function handler(message) {
-      _get(Object.getPrototypeOf(WidgetBootstrap.prototype), "handler", this).call(this, message);
+      // super.handler(message);
 
       if (_handlers2["default"].hasOwnProperty(message)) {
 
